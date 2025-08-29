@@ -7,4 +7,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-export default app;
+app.listen(process.env.PORT, ()=>{
+  console.log("server is running")
+})
