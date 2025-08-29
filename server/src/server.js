@@ -1,12 +1,9 @@
 import express from "express";
-import "dotenv/config";
 
 const app = express();
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+app.get("/", (req, res) => {
+  res.json({ message: "Hello from Vercel!" });
 });
 
-app.listen(process.env.PORT, ()=>{
-  console.log("server is running")
-})
+export default app;
